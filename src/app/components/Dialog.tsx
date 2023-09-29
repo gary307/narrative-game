@@ -47,11 +47,13 @@ export const Dialog = ({
     options: Array<{ name: string; copy: string; nextStep: { name: string } }>;
   }[];
 }) => {
-  const localStorageFields = localStorage.getItem("fields");
+  // const localStorageFields = window?.localStorage.getItem("fields");
 
-  const [textFieldsToShow, setTextFieldsToShow] = useState(
-    localStorageFields ? [...localStorageFields.split(",")] : ["Introduction"]
-  );
+  // const [textFieldsToShow, setTextFieldsToShow] = useState(
+  //   localStorageFields ? [...localStorageFields.split(",")] : ["Introduction"]
+  // );
+
+  const [textFieldsToShow, setTextFieldsToShow] = useState(["Introduction"]);
 
   const textFieldsFiltered = allDialogfields.filter((text) =>
     textFieldsToShow.includes(text.name)
