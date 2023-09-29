@@ -1,6 +1,5 @@
-import styled from "styled-components";
 import { Dialog } from "./components/Dialog";
-import { performRequest } from "./lib/datocms";
+import { performRequest } from "./lib/datoCms";
 
 const PAGE_CONTENT_QUERY = `
   query Home {
