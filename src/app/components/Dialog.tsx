@@ -77,10 +77,10 @@ export const Dialog = ({
                         ...textFieldsToShow,
                         option.nextStep.name,
                       ]);
-                      localStorage.setItem("fields", [
-                        ...textFieldsToShow,
-                        option.nextStep.name,
-                      ]);
+                      // localStorage.setItem("fields", [
+                      //   ...textFieldsToShow,
+                      //   // option.nextStep.name as string,
+                      // ]);
                     }, 1000);
                 }}
               >
