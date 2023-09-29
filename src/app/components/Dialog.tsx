@@ -44,7 +44,7 @@ export const Dialog = ({
   allDialogfields: {
     name: string;
     content: string;
-    options: Array<{ name: string; nextStep: { name: string } }>;
+    options: Array<{ name: string; copy: string; nextStep: { name: string } }>;
   }[];
 }) => {
   const localStorageFields = localStorage.getItem("fields");
